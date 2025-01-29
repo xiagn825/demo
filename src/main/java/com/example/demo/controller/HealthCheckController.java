@@ -26,12 +26,11 @@ public class HealthCheckController {
 
             // 获取主机名
             String hostName = localHost.getHostName();
-            System.out.println("主机名: " + hostName);
 
             // 获取IP地址
             String hostAddress = localHost.getHostAddress();
-            System.out.println("IP地址: " + hostAddress);
-            return String.format("return form %s at %s", hostName, hostAddress);
+
+            return String.format("response form %s at %s for version 0.0.1", hostName, hostAddress);
         } catch (UnknownHostException e) {
             System.err.println("无法获取本机IP地址及主机名: " + e.getMessage());
             return "UNKNOWN";
