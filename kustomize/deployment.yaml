@@ -17,7 +17,7 @@ spec:
         app: demo
     spec:
       containers:
-        - image: kind-registry:5000/java-demo:latest
+        - image: kind-registry:5000/java-demo
           name: demo
           resources: {}
 status: {}
