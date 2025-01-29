@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-demo
+spec:
+  containers:
+    - name: java-demo
+      image: kind-registry:5000/java-demo
+      ports:
+        - containerPort: 8080
+          hostPort: 8086
